@@ -7,16 +7,6 @@
 const QUESTIONS_DB = [
     // ========== ORIGINAL GENERAL QUESTIONS ==========
     {
-        question: "Name something you might find in a teenager's bedroom that parents would hate.",
-        answers: [
-            { text: "Dirty laundry", points: 42 },
-            { text: "Video game mess", points: 28 },
-            { text: "Half-eaten food", points: 16 },
-            { text: "Loud music speakers", points: 9 },
-            { text: "Hidden phone", points: 5 }
-        ]
-    },
-    {
         question: "Tell me a reason people call in sick to work when they're not actually sick.",
         answers: [
             { text: "Need a mental health day", points: 38 },
