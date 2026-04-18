@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Family Feud | Classical Music Edition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="game-container">
+    <div class="game-header">
+        <div class="team-score">🏆 TEAM A <span id="scoreA">0</span></div>
+        <div class="round-badge">⚡ FAMILY FEUD ⚡</div>
+        <div class="team-score">🏅 TEAM B <span id="scoreB">0</span></div>
+    </div>
+
+    <div class="question-board">
+        <div class="question-text" id="questionDisplay">Loading...</div>
+    </div>
+
+    <div class="answers-grid" id="answersContainer"></div>
+
+    <!-- STRIKE DISPLAY - Everyone can see -->
+    <div class="strike-display">
+        <div class="strike-indicators">
+            <span class="strike-label">STRIKES:</span>
+            <span class="strike-icon" id="strike1">⚪</span>
+            <span class="strike-icon" id="strike2">⚪</span>
+            <span class="strike-icon" id="strike3">⚪</span>
+        </div>
+    </div>
+
+    <div class="control-panel">
+        <button id="strikeBtn" class="strike-btn">❌ ADD STRIKE (Wrong Answer)</button>
+        <button id="stealBtn" class="steal-btn">⚡ STEAL</button>
+        <button id="nextRoundBtn" class="btn-primary">➡️ NEXT QUESTION</button>
+        <button id="resetGameBtn" class="btn-danger">🔄 RESET GAME</button>
+    </div>
+
+    <div class="status-area" id="statusMessage">
+        🎤 Team A's turn! Players guess answers out loud.
+    </div>
+    <footer>🎙️ Host: Click ADD STRIKE for wrong answers | Click ? boxes for correct answers | After round ends, all answers reveal automatically</footer>
+</div>
+
+<script src="questions.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
